@@ -5,16 +5,19 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Ayin adini daxil et ");
+        System.out.println(" eded daxil edin ");
+        int eded=scanner.nextInt();
+
         String proses = scanner.nextLine();
 
-        switch (proses) {
-            case "dekabr","yanvar","mart","may","iyul","avqust","oktyabr" -> System.out.println("31 gun" );
-            case "aprel","iyun","sentyabr","noyabr" -> System.out.println("30 gun");
-            case "fevral" -> System.out.println("28 gun");
+        switch (eded) {
+            case 1, 2, 3, 4, 5 -> System.out.println("1-5 arasindadir");
+            case 6, 7, 8, 9 -> System.out.println("5-10 arasindadir");
 
+            default-> System.out.println("yanlis daxil etmisiniz");
 
 
         }
+
     }
 }
